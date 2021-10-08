@@ -1,12 +1,12 @@
-# French translations for the xfce4-eyes-plugin package.
+# French translations for the whiskey-eyes-plugin package.
 # Copyright (C) Free Software Foundation
-# This file is distributed under the same license as the xfce4-eyes-plugin package.
+# This file is distributed under the same license as the whiskey-eyes-plugin package.
 # Jaime Buffery <nestu@lunar-linux.org>, 2004
 # Abel Martín <abel.martin.ruiz@gmail.com>, 2008
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce4-eyes 4.3.0\n"
+"Project-Id-Version: whiskey-eyes 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-03-01 17:32+0100\n"
 "PO-Revision-Date: 2008-11-02 20:43+0100\n"
@@ -17,18 +17,18 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: es\n"
 
-#: ../panel-plugin/eyes.c:324 ../panel-plugin/eyes.desktop.in.h:1
+#: ../bar-plugin/eyes.c:324 ../bar-plugin/eyes.desktop.in.h:1
 msgid "Eyes"
 msgstr "Ojos"
 
-#: ../panel-plugin/eyes.c:340
+#: ../bar-plugin/eyes.c:340
 msgid "_Select a theme:"
 msgstr "_Seleccionar un tema:"
 
-#: ../panel-plugin/eyes.c:377
-msgid "Use single _row in multi-row panel"
-msgstr "Utilice una _fila única en el panel de varias filas"
+#: ../bar-plugin/eyes.c:377
+msgid "Use single _row in multi-row bar"
+msgstr "Utilice una _fila única en el bar de varias filas"
 
-#: ../panel-plugin/eyes.desktop.in.h:2
+#: ../bar-plugin/eyes.desktop.in.h:2
 msgid "Eyes that spy on you"
 msgstr "Ojos que te espían"

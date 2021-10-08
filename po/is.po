@@ -6,7 +6,7 @@
 # Sveinn í Felli <sveinki@nett.is>, 2013
 msgid ""
 msgstr ""
-"Project-Id-Version: Xfce Panel Plugins\n"
+"Project-Id-Version: Blade Bar Plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-07-03 20:59+0200\n"
 "PO-Revision-Date: 2013-12-03 10:01+0000\n"
@@ -18,18 +18,18 @@ msgstr ""
 "Language: is\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../panel-plugin/eyes.c:332 ../panel-plugin/eyes.desktop.in.h:1
+#: ../bar-plugin/eyes.c:332 ../bar-plugin/eyes.desktop.in.h:1
 msgid "Eyes"
 msgstr "Augu"
 
-#: ../panel-plugin/eyes.c:348
+#: ../bar-plugin/eyes.c:348
 msgid "_Select a theme:"
 msgstr "_Veldu þema:"
 
-#: ../panel-plugin/eyes.c:385
-msgid "Use single _row in multi-row panel"
+#: ../bar-plugin/eyes.c:385
+msgid "Use single _row in multi-row bar"
 msgstr "Nota eina _röð í margraða stiku"
 
-#: ../panel-plugin/eyes.desktop.in.h:2
+#: ../bar-plugin/eyes.desktop.in.h:2
 msgid "Eyes that spy on you"
 msgstr "Augu sem njósna um þig"

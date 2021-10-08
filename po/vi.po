@@ -1,11 +1,11 @@
-# xfce4-eyes for XFCE
-# Copyright (C) 2003 THE xfce4-eyes'S COPYRIGHT HOLDER
+# whiskey-eyes for XFCE
+# Copyright (C) 2003 THE whiskey-eyes'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the xfwm4 package.
 # Lâm Vĩnh Niên <nienvl@yahoo.ca>, 2004.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce4-eyes 4.3.0\n"
+"Project-Id-Version: whiskey-eyes 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-03-01 17:32+0100\n"
 "PO-Revision-Date: 2004-09-08 15:40+9\n"
@@ -16,18 +16,18 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../panel-plugin/eyes.c:324 ../panel-plugin/eyes.desktop.in.h:1
+#: ../bar-plugin/eyes.c:324 ../bar-plugin/eyes.desktop.in.h:1
 msgid "Eyes"
 msgstr "Cặp mắt"
 
-#: ../panel-plugin/eyes.c:340
+#: ../bar-plugin/eyes.c:340
 msgid "_Select a theme:"
 msgstr ""
 
-#: ../panel-plugin/eyes.c:377
-msgid "Use single _row in multi-row panel"
+#: ../bar-plugin/eyes.c:377
+msgid "Use single _row in multi-row bar"
 msgstr ""
 
-#: ../panel-plugin/eyes.desktop.in.h:2
+#: ../bar-plugin/eyes.desktop.in.h:2
 msgid "Eyes that spy on you"
 msgstr ""

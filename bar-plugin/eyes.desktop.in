@@ -1,8 +1,8 @@
-[Xfce Panel]
-Type=X-XFCE-PanelPlugin
+[Blade Bar]
+Type=X-XFCE-BarPlugin
 Encoding=UTF-8
 _Name=Eyes
 _Comment=Eyes that spy on you
-Icon=xfce4-eyes
+Icon=whiskey-eyes
 X-XFCE-Internal=FALSE
 X-XFCE-Module=eyes

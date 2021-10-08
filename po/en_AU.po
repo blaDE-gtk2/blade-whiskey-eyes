@@ -6,7 +6,7 @@
 # k3lt01 <keltoiboy@gmail.com>, 2013
 msgid ""
 msgstr ""
-"Project-Id-Version: Xfce Panel Plugins\n"
+"Project-Id-Version: Blade Bar Plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-07-03 20:59+0200\n"
 "PO-Revision-Date: 2013-07-29 09:07+0000\n"
@@ -18,18 +18,18 @@ msgstr ""
 "Language: en_AU\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../panel-plugin/eyes.c:332 ../panel-plugin/eyes.desktop.in.h:1
+#: ../bar-plugin/eyes.c:332 ../bar-plugin/eyes.desktop.in.h:1
 msgid "Eyes"
 msgstr "Eyes"
 
-#: ../panel-plugin/eyes.c:348
+#: ../bar-plugin/eyes.c:348
 msgid "_Select a theme:"
 msgstr "_Select a theme:"
 
-#: ../panel-plugin/eyes.c:385
-msgid "Use single _row in multi-row panel"
-msgstr "Use single _row in multi-row panel"
+#: ../bar-plugin/eyes.c:385
+msgid "Use single _row in multi-row bar"
+msgstr "Use single _row in multi-row bar"
 
-#: ../panel-plugin/eyes.desktop.in.h:2
+#: ../bar-plugin/eyes.desktop.in.h:2
 msgid "Eyes that spy on you"
 msgstr "Eyes that spy on you"

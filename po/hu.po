@@ -1,12 +1,12 @@
-# Hungarian translation of xfce4-eyes-plugin
+# Hungarian translation of whiskey-eyes-plugin
 # Copyright 2009. Free Software Foundation, Inc.
-# This file is distributed under the same license as the xfce4-eyes package.
+# This file is distributed under the same license as the whiskey-eyes package.
 # 
 # Egmont Koblinger <egmont@uhulinux.hu>, 2003.
 # Gabor Kelemen <kelemeng at gnome dot hu>, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce4-eyes 4.3.0\n"
+"Project-Id-Version: whiskey-eyes 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-03-01 17:32+0100\n"
 "PO-Revision-Date: 2009-07-24 00:38+0200\n"
@@ -19,18 +19,18 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: ../panel-plugin/eyes.c:324 ../panel-plugin/eyes.desktop.in.h:1
+#: ../bar-plugin/eyes.c:324 ../bar-plugin/eyes.desktop.in.h:1
 msgid "Eyes"
 msgstr "Szemek"
 
-#: ../panel-plugin/eyes.c:340
+#: ../bar-plugin/eyes.c:340
 msgid "_Select a theme:"
 msgstr "_Válasszon témát:"
 
-#: ../panel-plugin/eyes.c:377
-msgid "Use single _row in multi-row panel"
-msgstr "_Egy sor használata többsoros panelen"
+#: ../bar-plugin/eyes.c:377
+msgid "Use single _row in multi-row bar"
+msgstr "_Egy sor használata többsoros baren"
 
-#: ../panel-plugin/eyes.desktop.in.h:2
+#: ../bar-plugin/eyes.desktop.in.h:2
 msgid "Eyes that spy on you"
 msgstr "Szemek, melyek figyelik"

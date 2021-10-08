@@ -1,9 +1,10 @@
 AM_CPPFLAGS = 										\
+	-DGLIB_DISABLE_DEPRECATION_WARNINGS \
 	-I$(top_srcdir)									\
 	-DPACKAGE_LOCALE_DIR=\"$(localedir)\"			\
 	-DTHEMESDIR=\"$(datadir)/xfce4/eyes/themes\"
 
-plugindir = $(libdir)/xfce4/panel/plugins
+plugindir = $(libdir)/xfce4/bar/plugins
 plugin_LTLIBRARIES = libeyes.la
 
 libeyes_la_SOURCES =					\
@@ -13,21 +14,21 @@ libeyes_la_SOURCES =					\
 	themes.c
 
 libeyes_la_CFLAGS =						\
-	$(LIBXFCE4UI_CFLAGS)				\
-	$(LIBXFCE4PANEL_CFLAGS)
+	$(LIBBLADEUI_CFLAGS)				\
+	$(LIBBLADEBAR_CFLAGS)
 
 libeyes_la_LIBADD =						\
-	$(LIBXFCE4PANEL_LIBS)				\
-	$(LIBXFCE4UI_LIBS)
+	$(LIBBLADEBAR_LIBS)				\
+	$(LIBBLADEUI_LIBS)
 
 libeyes_la_LDFLAGS =					\
 	-avoid-version 						\
 	-module 							\
 	-no-undefined						\
-	-export-symbols-regex '^xfce_panel_module_(preinit|init|construct)' \
+	-export-symbols-regex '^blade_bar_module_(preinit|init|construct)' \
 	$(PLATFORM_LDFLAGS)
 
-desktopdir = $(datadir)/xfce4/panel/plugins
+desktopdir = $(datadir)/xfce4/bar/plugins
 desktop_in_files = eyes.desktop.in
 desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
 @INTLTOOL_DESKTOP_RULE@

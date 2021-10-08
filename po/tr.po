@@ -8,7 +8,7 @@
 # Necdet Yücel <necdetyucel@gmail.com>, 2013
 msgid ""
 msgstr ""
-"Project-Id-Version: Xfce Panel Plugins\n"
+"Project-Id-Version: Blade Bar Plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-07-03 20:59+0200\n"
 "PO-Revision-Date: 2013-08-02 13:30+0000\n"
@@ -20,18 +20,18 @@ msgstr ""
 "Language: tr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: ../panel-plugin/eyes.c:332 ../panel-plugin/eyes.desktop.in.h:1
+#: ../bar-plugin/eyes.c:332 ../bar-plugin/eyes.desktop.in.h:1
 msgid "Eyes"
 msgstr "Gözler"
 
-#: ../panel-plugin/eyes.c:348
+#: ../bar-plugin/eyes.c:348
 msgid "_Select a theme:"
 msgstr "Bir tema _seçin:"
 
-#: ../panel-plugin/eyes.c:385
-msgid "Use single _row in multi-row panel"
-msgstr "Çok sıralı panelde tek sı_ra kullan"
+#: ../bar-plugin/eyes.c:385
+msgid "Use single _row in multi-row bar"
+msgstr "Çok sıralı barde tek sı_ra kullan"
 
-#: ../panel-plugin/eyes.desktop.in.h:2
+#: ../bar-plugin/eyes.desktop.in.h:2
 msgid "Eyes that spy on you"
 msgstr "Sizi gözetleyen gözler!"

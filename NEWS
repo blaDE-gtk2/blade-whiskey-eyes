@@ -16,15 +16,15 @@
 4.4.2 (2013-03-04)
 ------------------
 - Small optimizations to update function, making animation more smooth.
-- Support for deskbar mode and panel multi-row config (>=xfce4-panel-4.9.0).
+- Support for deskbar mode and bar multi-row config (>=blade-bar-4.9.0).
 - Make eye movement independent, like in xeyes (bug #9036).
 - Implement eye position calculations in 3D coordinates (bug #9036).
 - Build the plugin as a module.
 - Autotools update (automake-1.13 compatibility and other issues).
 - Fix remembering theme (bug #9035).
-- Update size after panel orientation change (bug #8404).
+- Update size after bar orientation change (bug #8404).
 - More translation updates.
-- Port to libxfce4ui (bug #8074).
+- Port to libbladeui (bug #8074).
 
 4.4.1 (2010-12-18)
 ------------------

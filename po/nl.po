@@ -1,12 +1,12 @@
-# Dutch translation of the xfce4-eyes-plugin package.
+# Dutch translation of the whiskey-eyes-plugin package.
 # Copyright (C) The Xfce development team.
-# This file is distributed under the same license as the xfce4-eyes-plugin package.
+# This file is distributed under the same license as the whiskey-eyes-plugin package.
 # Stephan Arts <psybsd@gmail.com>, 2006.
 # Pjotr <pjotrvertaalt@gmail.com> , 2011 - 2013.
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce4-eyes-plugin\n"
+"Project-Id-Version: whiskey-eyes-plugin\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-03-01 17:32+0100\n"
 "PO-Revision-Date: 2011-06-15 08:35+0200\n"
@@ -18,18 +18,18 @@ msgstr ""
 "Language: nl (Dutch)\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../panel-plugin/eyes.c:324 ../panel-plugin/eyes.desktop.in.h:1
+#: ../bar-plugin/eyes.c:324 ../bar-plugin/eyes.desktop.in.h:1
 msgid "Eyes"
 msgstr "Ogen"
 
-#: ../panel-plugin/eyes.c:340
+#: ../bar-plugin/eyes.c:340
 msgid "_Select a theme:"
 msgstr "_Selecteer een thema:"
 
-#: ../panel-plugin/eyes.c:377
-msgid "Use single _row in multi-row panel"
+#: ../bar-plugin/eyes.c:377
+msgid "Use single _row in multi-row bar"
 msgstr "Gebruik enkele rij in een paneel voor meerdere rijen"
 
-#: ../panel-plugin/eyes.desktop.in.h:2
+#: ../bar-plugin/eyes.desktop.in.h:2
 msgid "Eyes that spy on you"
 msgstr "Ogen die u bespioneren"

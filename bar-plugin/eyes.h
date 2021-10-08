@@ -20,11 +20,11 @@
 #define __EYES_H__
 
 #include <gtk/gtk.h>
-#include <libxfce4panel/xfce-panel-plugin.h>
+#include <libbladebar/blade-bar-plugin.h>
 
 typedef struct
 {
-	XfcePanelPlugin *plugin;
+	BladeBarPlugin *plugin;
 
 	GtkWidget	*ebox;
 

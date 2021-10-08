@@ -5,7 +5,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce4-eyes 4.3.0\n"
+"Project-Id-Version: whiskey-eyes 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-03-01 17:32+0100\n"
 "PO-Revision-Date: 2003-12-24 02:00+0100\n"
@@ -16,18 +16,18 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: \n"
 
-#: ../panel-plugin/eyes.c:324 ../panel-plugin/eyes.desktop.in.h:1
+#: ../bar-plugin/eyes.c:324 ../bar-plugin/eyes.desktop.in.h:1
 msgid "Eyes"
 msgstr "Oczy"
 
-#: ../panel-plugin/eyes.c:340
+#: ../bar-plugin/eyes.c:340
 msgid "_Select a theme:"
 msgstr "_Styl:"
 
-#: ../panel-plugin/eyes.c:377
-msgid "Use single _row in multi-row panel"
-msgstr "Zajmowanie jednego _wiersza na panelu z wieloma wierszami"
+#: ../bar-plugin/eyes.c:377
+msgid "Use single _row in multi-row bar"
+msgstr "Zajmowanie jednego _wiersza na baru z wieloma wierszami"
 
-#: ../panel-plugin/eyes.desktop.in.h:2
+#: ../bar-plugin/eyes.desktop.in.h:2
 msgid "Eyes that spy on you"
 msgstr "Wyświetla oczy obserwujące kursor myszy"

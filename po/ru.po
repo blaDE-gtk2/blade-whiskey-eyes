@@ -1,12 +1,12 @@
-# translation of xfce4-eyes.po to Russian
-# This file is distributed under the same license as the xfce4-eyes package.
-# Copyright (C) YEAR THE xfce4-eyes'S COPYRIGHT HOLDER.
+# translation of whiskey-eyes.po to Russian
+# This file is distributed under the same license as the whiskey-eyes package.
+# Copyright (C) YEAR THE whiskey-eyes'S COPYRIGHT HOLDER.
 # Anthony Ivanoff <a-i@bk.ru>, 2004.
 # Dima Smirnov <arch@cnc-parts.info>, 2010.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce4-eyes 4.4.2\n"
+"Project-Id-Version: whiskey-eyes 4.4.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-03-02 13:04+0400\n"
 "PO-Revision-Date: 2013-03-02 13:08+0400\n"
@@ -20,18 +20,18 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#: ../panel-plugin/eyes.c:326 ../panel-plugin/eyes.desktop.in.h:1
+#: ../bar-plugin/eyes.c:326 ../bar-plugin/eyes.desktop.in.h:1
 msgid "Eyes"
 msgstr "Глаза"
 
-#: ../panel-plugin/eyes.c:342
+#: ../bar-plugin/eyes.c:342
 msgid "_Select a theme:"
 msgstr "_Выберите тему:"
 
-#: ../panel-plugin/eyes.c:379
-msgid "Use single _row in multi-row panel"
+#: ../bar-plugin/eyes.c:379
+msgid "Use single _row in multi-row bar"
 msgstr "Использовать одну с_троку в многострочной панели"
 
-#: ../panel-plugin/eyes.desktop.in.h:2
+#: ../bar-plugin/eyes.desktop.in.h:2
 msgid "Eyes that spy on you"
 msgstr "Глазки, которые следят за вами"

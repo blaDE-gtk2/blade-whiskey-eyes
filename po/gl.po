@@ -1,4 +1,4 @@
-# Galician translation of xfce4-eyes-plugin
+# Galician translation of whiskey-eyes-plugin
 # Copyright (C) 2008-2009 Leandro Regueiro
 # This file is distributed under the same license as the xfce package.
 #
@@ -21,18 +21,18 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
-#: ../panel-plugin/eyes.c:324 ../panel-plugin/eyes.desktop.in.h:1
+#: ../bar-plugin/eyes.c:324 ../bar-plugin/eyes.desktop.in.h:1
 msgid "Eyes"
 msgstr "Ollos"
 
-#: ../panel-plugin/eyes.c:340
+#: ../bar-plugin/eyes.c:340
 msgid "_Select a theme:"
 msgstr "_Seleccione un tema:"
 
-#: ../panel-plugin/eyes.c:377
-msgid "Use single _row in multi-row panel"
+#: ../bar-plugin/eyes.c:377
+msgid "Use single _row in multi-row bar"
 msgstr ""
 
-#: ../panel-plugin/eyes.desktop.in.h:2
+#: ../bar-plugin/eyes.desktop.in.h:2
 msgid "Eyes that spy on you"
 msgstr "Ollos que o observan"

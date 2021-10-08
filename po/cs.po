@@ -1,14 +1,14 @@
 # translation of cs.po to Czech
 # Czech translation for xfdesktop
-# This file is distributed under the same license as the xfce4-eyes package.
-# Copyright (C) YEAR THE xfce4-eyes'S COPYRIGHT HOLDER.
+# This file is distributed under the same license as the whiskey-eyes package.
+# Copyright (C) YEAR THE whiskey-eyes'S COPYRIGHT HOLDER.
 # Lukáš Konarovský <daeltar@daeltar.org>, 2003.
 # Alois Nespor <Alois.Nespor@seznam.cz>, 2004.
 # Michal Várady <miko.vaji@gmail.com>, 2006.
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce4-eyes 4.3.0\n"
+"Project-Id-Version: whiskey-eyes 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-03-01 17:32+0100\n"
 "PO-Revision-Date: 2006-09-23 09:55+0100\n"
@@ -20,18 +20,18 @@ msgstr ""
 "Language: cs\n"
 "X-Generator: KBabel 1.3\n"
 
-#: ../panel-plugin/eyes.c:324 ../panel-plugin/eyes.desktop.in.h:1
+#: ../bar-plugin/eyes.c:324 ../bar-plugin/eyes.desktop.in.h:1
 msgid "Eyes"
 msgstr "Oči"
 
-#: ../panel-plugin/eyes.c:340
+#: ../bar-plugin/eyes.c:340
 msgid "_Select a theme:"
 msgstr "_Vyberte motiv:"
 
-#: ../panel-plugin/eyes.c:377
-msgid "Use single _row in multi-row panel"
-msgstr "Ve víceřádkovém panelu použít pouze jeden řádek"
+#: ../bar-plugin/eyes.c:377
+msgid "Use single _row in multi-row bar"
+msgstr "Ve víceřádkovém baru použít pouze jeden řádek"
 
-#: ../panel-plugin/eyes.desktop.in.h:2
+#: ../bar-plugin/eyes.desktop.in.h:2
 msgid "Eyes that spy on you"
 msgstr "Oči, které Vás sledují"

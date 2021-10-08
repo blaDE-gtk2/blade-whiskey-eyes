@@ -1,6 +1,6 @@
-# Japanese translation for xfce4-eyes package.
+# Japanese translation for whiskey-eyes package.
 # Copyright (C) 2003-2013 Free Software Foundation, Inc.
-# This file is distributed under the same license as the xfce4-eyes package.
+# This file is distributed under the same license as the whiskey-eyes package.
 # Zhao Ji <zhao-ji@awz.ne.jp>, 2003-2004.
 # Daichi Kawahata <daichi@xfce.org>, 2005-2006.
 # Nobuhiro Iwamatsu <iwamatsu@nigauri.org>, 2008.
@@ -8,7 +8,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce4-eyes 4.3.0\n"
+"Project-Id-Version: whiskey-eyes 4.3.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-03-02 19:31+0900\n"
 "PO-Revision-Date: 2013-03-02 19:31+0900\n"
@@ -19,18 +19,18 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../panel-plugin/eyes.c:326 ../panel-plugin/eyes.desktop.in.h:1
+#: ../bar-plugin/eyes.c:326 ../bar-plugin/eyes.desktop.in.h:1
 msgid "Eyes"
 msgstr "めだま"
 
-#: ../panel-plugin/eyes.c:342
+#: ../bar-plugin/eyes.c:342
 msgid "_Select a theme:"
 msgstr "テーマ(_S):"
 
-#: ../panel-plugin/eyes.c:379
-msgid "Use single _row in multi-row panel"
+#: ../bar-plugin/eyes.c:379
+msgid "Use single _row in multi-row bar"
 msgstr "複数行のパネルに 1 行で表示する(_R)"
 
-#: ../panel-plugin/eyes.desktop.in.h:2
+#: ../bar-plugin/eyes.desktop.in.h:2
 msgid "Eyes that spy on you"
 msgstr "あなたを追跡するめだまです"

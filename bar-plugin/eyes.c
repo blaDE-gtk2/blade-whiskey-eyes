@@ -34,8 +34,8 @@
 #include <string.h>
 #include <stdlib.h>
 
-#include <libxfce4util/libxfce4util.h>
-#include <libxfce4ui/libxfce4ui.h>
+#include <libbladeutil/libbladeutil.h>
+#include <libbladeui/libbladeui.h>
 
 #include "eyes.h"
 #include "themes.h"
@@ -49,10 +49,10 @@
 /***************************
  *** Function Prototypes ***
  ***************************/
-static void eyes_write_rc_file (XfcePanelPlugin *plugin,
+static void eyes_write_rc_file (BladeBarPlugin *plugin,
                                 EyesPlugin      *eyes);
 
-static gboolean eyes_set_size (XfcePanelPlugin *plugin,
+static gboolean eyes_set_size (BladeBarPlugin *plugin,
                                gint             size,
                                EyesPlugin      *eyes);
 
@@ -274,7 +274,7 @@ eyes_properties_dialog_response (GtkWidget  *dlg,
                                  gint        response,
                                  EyesPlugin *eyes)
 {
-    xfce_panel_plugin_unblock_menu (eyes->plugin);
+    blade_bar_plugin_unblock_menu (eyes->plugin);
 
     eyes_write_rc_file (eyes->plugin, eyes);
 
@@ -299,26 +299,26 @@ combobox_changed (GtkComboBox    *combobox,
     setup_eyes(eyes);
     eyes_applet_fill(eyes);
 
-    eyes_set_size(eyes->plugin, xfce_panel_plugin_get_size(eyes->plugin),
+    eyes_set_size(eyes->plugin, blade_bar_plugin_get_size(eyes->plugin),
                   eyes);
 }
 
 
 
-#if LIBXFCE4PANEL_CHECK_VERSION(4,9,0)
+#if LIBBLADEBAR_CHECK_VERSION(4,9,0)
 static void
 check_single_row_toggled (GtkWidget  *check,
                           EyesPlugin *eyes)
 {
     eyes->single_row = gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(check));
-    eyes_set_size(eyes->plugin, xfce_panel_plugin_get_size(eyes->plugin),
+    eyes_set_size(eyes->plugin, blade_bar_plugin_get_size(eyes->plugin),
                   eyes);
 }
 #endif
 
 
 static void
-eyes_properties_dialog (XfcePanelPlugin *plugin,
+eyes_properties_dialog (BladeBarPlugin *plugin,
                         EyesPlugin      *eyes)
 {
 	GtkWidget   *dlg, *hbox, *label, *combobox, *check;
@@ -327,7 +327,7 @@ eyes_properties_dialog (XfcePanelPlugin *plugin,
 	gchar       *current;
 	const gchar *entry;
 
-	xfce_panel_plugin_block_menu (plugin);
+	blade_bar_plugin_block_menu (plugin);
 
 	dlg = xfce_titled_dialog_new_with_buttons (_("Eyes"),
                                                   GTK_WINDOW (gtk_widget_get_toplevel (GTK_WIDGET (plugin))),
@@ -336,7 +336,7 @@ eyes_properties_dialog (XfcePanelPlugin *plugin,
                                                   NULL);
 
     gtk_window_set_position   (GTK_WINDOW (dlg), GTK_WIN_POS_CENTER);
-    gtk_window_set_icon_name  (GTK_WINDOW (dlg), "xfce4-settings");
+    gtk_window_set_icon_name  (GTK_WINDOW (dlg), "blade-settings");
 
     g_signal_connect (dlg, "response", G_CALLBACK (eyes_properties_dialog_response),
                       eyes);
@@ -380,9 +380,9 @@ eyes_properties_dialog (XfcePanelPlugin *plugin,
     g_signal_connect(G_OBJECT(combobox), "changed",
             G_CALLBACK(combobox_changed), eyes);
 
-#if LIBXFCE4PANEL_CHECK_VERSION(4,9,0)
+#if LIBBLADEBAR_CHECK_VERSION(4,9,0)
     check = gtk_check_button_new_with_mnemonic
-        (_("Use single _row in multi-row panel"));
+        (_("Use single _row in multi-row bar"));
     gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(check), eyes->single_row);
 	gtk_box_pack_start (GTK_BOX (GTK_DIALOG (dlg)->vbox), check, FALSE, FALSE, 0);
     g_signal_connect(check, "toggled", G_CALLBACK(check_single_row_toggled), eyes);
@@ -394,10 +394,10 @@ eyes_properties_dialog (XfcePanelPlugin *plugin,
 
 
 /******************************
- *** Panel Plugin Functions ***
+ *** Bar Plugin Functions ***
  ******************************/
 static void
-eyes_free_data(XfcePanelPlugin *plugin,
+eyes_free_data(BladeBarPlugin *plugin,
                EyesPlugin      *eyes)
 {
     g_return_if_fail(plugin != NULL);
@@ -438,15 +438,15 @@ eyes_free_data(XfcePanelPlugin *plugin,
 
 
 static gboolean
-eyes_set_size (XfcePanelPlugin *plugin,
+eyes_set_size (BladeBarPlugin *plugin,
                gint             size,
                EyesPlugin      *eyes)
 {
-#if LIBXFCE4PANEL_CHECK_VERSION(4,9,0)
-    xfce_panel_plugin_set_small (plugin, eyes->single_row);
+#if LIBBLADEBAR_CHECK_VERSION(4,9,0)
+    blade_bar_plugin_set_small (plugin, eyes->single_row);
     gtk_widget_set_size_request (GTK_WIDGET (plugin), -1, -1);
 #else
-    if (xfce_panel_plugin_get_orientation (plugin) ==
+    if (blade_bar_plugin_get_orientation (plugin) ==
         GTK_ORIENTATION_HORIZONTAL)
         gtk_widget_set_size_request (GTK_WIDGET (plugin), -1, size);
     else
@@ -457,19 +457,19 @@ eyes_set_size (XfcePanelPlugin *plugin,
 }
 
 
-#if LIBXFCE4PANEL_CHECK_VERSION(4,9,0)
+#if LIBBLADEBAR_CHECK_VERSION(4,9,0)
 static gboolean
-eyes_mode_changed (XfcePanelPlugin     *plugin,
-                   XfcePanelPluginMode  mode,
+eyes_mode_changed (BladeBarPlugin     *plugin,
+                   BladeBarPluginMode  mode,
                    EyesPlugin          *eyes)
 {
-    if (mode == XFCE_PANEL_PLUGIN_MODE_VERTICAL ||
-        mode == XFCE_PANEL_PLUGIN_MODE_DESKBAR)
+    if (mode == BLADE_BAR_PLUGIN_MODE_VERTICAL ||
+        mode == BLADE_BAR_PLUGIN_MODE_DESKBAR)
         gtk_alignment_set (GTK_ALIGNMENT (eyes->align), 0.5, 0.5, 0.0, 1.0);
     else
         gtk_alignment_set (GTK_ALIGNMENT (eyes->align), 0.5, 0.5, 1.0, 0.0);
 
-    eyes_set_size (plugin, xfce_panel_plugin_get_size (plugin), eyes);
+    eyes_set_size (plugin, blade_bar_plugin_get_size (plugin), eyes);
 
     return TRUE;
 }
@@ -479,7 +479,7 @@ eyes_mode_changed (XfcePanelPlugin     *plugin,
 
 
 static void
-eyes_orientation_changed (XfcePanelPlugin *plugin,
+eyes_orientation_changed (BladeBarPlugin *plugin,
                           GtkOrientation   orientation,
                           EyesPlugin      *eyes)
 {
@@ -488,13 +488,13 @@ eyes_orientation_changed (XfcePanelPlugin *plugin,
     else
         gtk_alignment_set (GTK_ALIGNMENT (eyes->align), 0.5, 0.5, 1.0, 0.0);
 
-    eyes_set_size (plugin, xfce_panel_plugin_get_size (plugin), eyes);
+    eyes_set_size (plugin, blade_bar_plugin_get_size (plugin), eyes);
 }
 #endif
 
 
 static void
-eyes_read_rc_file (XfcePanelPlugin *plugin,
+eyes_read_rc_file (BladeBarPlugin *plugin,
                    EyesPlugin      *eyes)
 {
     XfceRc      *rc;
@@ -507,7 +507,7 @@ eyes_read_rc_file (XfcePanelPlugin *plugin,
         eyes->active_theme = NULL;
     }
 
-    if ((file = xfce_panel_plugin_lookup_rc_file (plugin)) != NULL)
+    if ((file = blade_bar_plugin_lookup_rc_file (plugin)) != NULL)
     {
         rc = xfce_rc_simple_open (file, TRUE);
         g_free (file);
@@ -533,13 +533,13 @@ eyes_read_rc_file (XfcePanelPlugin *plugin,
 
 
 static void
-eyes_write_rc_file (XfcePanelPlugin *plugin,
+eyes_write_rc_file (BladeBarPlugin *plugin,
                     EyesPlugin      *eyes)
 {
     gchar  *file;
     XfceRc *rc;
 
-    if (!(file = xfce_panel_plugin_save_location (plugin, TRUE)))
+    if (!(file = blade_bar_plugin_save_location (plugin, TRUE)))
         return;
 
     rc = xfce_rc_simple_open (file, FALSE);
@@ -559,7 +559,7 @@ eyes_write_rc_file (XfcePanelPlugin *plugin,
 
 
 static EyesPlugin *
-eyes_plugin_new (XfcePanelPlugin* plugin)
+eyes_plugin_new (BladeBarPlugin* plugin)
 {
     EyesPlugin *eyes;
 
@@ -587,7 +587,7 @@ eyes_plugin_new (XfcePanelPlugin* plugin)
 
 
 static void
-eyes_construct (XfcePanelPlugin *plugin)
+eyes_construct (BladeBarPlugin *plugin)
 {
     EyesPlugin *eyes;
 
@@ -595,7 +595,7 @@ eyes_construct (XfcePanelPlugin *plugin)
 
     eyes = eyes_plugin_new (plugin);
 
-#if LIBXFCE4PANEL_CHECK_VERSION(4,9,0)
+#if LIBBLADEBAR_CHECK_VERSION(4,9,0)
     g_signal_connect (plugin, "mode-changed",
               G_CALLBACK (eyes_mode_changed), eyes);
 #else
@@ -612,13 +612,13 @@ eyes_construct (XfcePanelPlugin *plugin)
     g_signal_connect (plugin, "save",
               G_CALLBACK (eyes_write_rc_file), eyes);
 
-    xfce_panel_plugin_menu_show_configure (plugin);
+    blade_bar_plugin_menu_show_configure (plugin);
     g_signal_connect (plugin, "configure-plugin",
               G_CALLBACK (eyes_properties_dialog), eyes);
 
     gtk_container_add (GTK_CONTAINER (plugin), eyes->ebox);
 
-    xfce_panel_plugin_add_action_widget (plugin, eyes->ebox);
+    blade_bar_plugin_add_action_widget (plugin, eyes->ebox);
 }
 
-XFCE_PANEL_PLUGIN_REGISTER (eyes_construct)
+BLADE_BAR_PLUGIN_REGISTER (eyes_construct)

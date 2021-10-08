@@ -7,7 +7,7 @@
 # Jens Hyllegaard <jens.hyllegaard@gmail.com>, 2007
 msgid ""
 msgstr ""
-"Project-Id-Version: Xfce Panel Plugins\n"
+"Project-Id-Version: Blade Bar Plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-07-03 20:59+0200\n"
 "PO-Revision-Date: 2013-11-20 18:01+0000\n"
@@ -19,18 +19,18 @@ msgstr ""
 "Language: da\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../panel-plugin/eyes.c:332 ../panel-plugin/eyes.desktop.in.h:1
+#: ../bar-plugin/eyes.c:332 ../bar-plugin/eyes.desktop.in.h:1
 msgid "Eyes"
 msgstr "Øjne"
 
-#: ../panel-plugin/eyes.c:348
+#: ../bar-plugin/eyes.c:348
 msgid "_Select a theme:"
 msgstr "_Vælg et tema:"
 
-#: ../panel-plugin/eyes.c:385
-msgid "Use single _row in multi-row panel"
-msgstr "Benyt en enkelt _række i et panel med flere rækker"
+#: ../bar-plugin/eyes.c:385
+msgid "Use single _row in multi-row bar"
+msgstr "Benyt en enkelt _række i et bar med flere rækker"
 
-#: ../panel-plugin/eyes.desktop.in.h:2
+#: ../bar-plugin/eyes.desktop.in.h:2
 msgid "Eyes that spy on you"
 msgstr "Øjne, der udspionerer dig"

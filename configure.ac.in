@@ -1,4 +1,4 @@
-dnl xfce4-eyes-plugin - eyes that spy on you
+dnl whiskey-eyes-plugin - eyes that spy on you
 dnl
 
 dnl ***************************
@@ -15,7 +15,7 @@ dnl ***************************
 dnl *** Initialize autoconf ***
 dnl ***************************
 AC_COPYRIGHT([Copyright (c) 2006-2015 The Xfce development team])
-AC_INIT([xfce4-eyes-plugin], [eyes_version], [http://bugzilla.xfce.org/], [xfce4-eyes-plugin])
+AC_INIT([whiskey-eyes-plugin], [eyes_version], [http://bugzilla.xfce.org/], [whiskey-eyes-plugin])
 AC_PREREQ([2.60])
 AC_CONFIG_MACRO_DIR([m4])
 AC_CANONICAL_TARGET()
@@ -59,9 +59,9 @@ dnl *** Check for required packages ***
 dnl ***********************************
 XDT_CHECK_PACKAGE([GTHREAD], [gthread-2.0], [2.20.0])
 XDT_CHECK_PACKAGE([GTK], [gtk+-2.0], [2.14.0])
-XDT_CHECK_PACKAGE([LIBXFCE4UI], [libxfce4ui-1], [4.8.0])
-XDT_CHECK_PACKAGE([LIBXFCE4UTIL], [libxfce4util-1.0], [4.8.0])
-XDT_CHECK_PACKAGE([LIBXFCE4PANEL], [libxfce4panel-1.0], [4.8.0])
+XDT_CHECK_PACKAGE([LIBBLADEUI], [libbladeui-1], [4.8.0])
+XDT_CHECK_PACKAGE([LIBBLADEUTIL], [libbladeutil-1.0], [4.8.0])
+XDT_CHECK_PACKAGE([LIBBLADEBAR], [libbladebar-1.0], [4.8.0])
 
 dnl ***********************************
 dnl *** Check for debugging support ***
@@ -71,7 +71,7 @@ XDT_FEATURE_DEBUG()
 AC_OUTPUT([
 Makefile
 po/Makefile.in
-panel-plugin/Makefile
+bar-plugin/Makefile
 icons/Makefile
 icons/48x48/Makefile
 themes/Makefile

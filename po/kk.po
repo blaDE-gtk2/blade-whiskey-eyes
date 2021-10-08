@@ -1,4 +1,4 @@
-# Kazakh translation for xfce4-eyes-plugin.
+# Kazakh translation for whiskey-eyes-plugin.
 # Copyright (C) 2010 Xfce team
 # This file is distributed under the same license as the Xfce package.
 # Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2010.
@@ -19,18 +19,18 @@ msgstr ""
 "X-Poedit-Language: Kazakh\n"
 "X-Poedit-Country: KAZAKHSTAN\n"
 
-#: ../panel-plugin/eyes.c:324 ../panel-plugin/eyes.desktop.in.h:1
+#: ../bar-plugin/eyes.c:324 ../bar-plugin/eyes.desktop.in.h:1
 msgid "Eyes"
 msgstr "Көздер"
 
-#: ../panel-plugin/eyes.c:340
+#: ../bar-plugin/eyes.c:340
 msgid "_Select a theme:"
 msgstr "_Теманы таңдаңыз:"
 
-#: ../panel-plugin/eyes.c:377
-msgid "Use single _row in multi-row panel"
+#: ../bar-plugin/eyes.c:377
+msgid "Use single _row in multi-row bar"
 msgstr "Бірнеше қатарлы панельде бір қа_тарды қолдану"
 
-#: ../panel-plugin/eyes.desktop.in.h:2
+#: ../bar-plugin/eyes.desktop.in.h:2
 msgid "Eyes that spy on you"
 msgstr "Сізге бақылайтын көздер"
