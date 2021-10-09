@@ -41,8 +41,8 @@ Makefile.in*
 m4
 missing
 mkinstalldirs
-panel-plugin/eyes.desktop
-panel-plugin/xfce4-eyes-plugin
+bar-plugin/eyes.desktop
+bar-plugin/whiskey-eyes-plugin
 po/POTFILES
 po/stamp-it
 readme.txt
